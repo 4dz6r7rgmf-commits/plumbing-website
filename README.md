@@ -1,6 +1,6 @@
 # ClearFlow Plumbing website
 
-A lightweight, mobile-first brochure site for a local plumbing company. It uses plain HTML, CSS, and vanilla JavaScript, with no build step or external runtime dependencies. The CSS illustration keeps the page fast and avoids stock-photo licensing concerns.
+A lightweight, mobile-first brochure site for a local plumbing company. It uses plain HTML, CSS, and vanilla JavaScript, with no build step or external runtime dependencies. The hero uses an optimized local stock photo from [Kindel Media on Pexels](https://www.pexels.com/photo/handywoman-holding-a-plumbers-wrench-8486978/), available under the [Pexels license](https://www.pexels.com/license/). Replace it with a photo of your own Australian plumbing team when available.
 
 ## Customize the business
 
@@ -32,3 +32,4 @@ This site has no build step. Push the files to the repository's `main` branch, t
 - `styles.css` — responsive layout, colors, illustration, and focus states
 - `business.js` — editable business details
 - `script.js` — navigation menu, contact-form demo message, and current year
+- `assets/plumber.jpg` — Pexels stock photo used in the hero

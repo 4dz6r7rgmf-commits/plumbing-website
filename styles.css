@@ -72,32 +72,15 @@ h1, h2, h3 { font-family: Manrope, sans-serif; }
 .hero-assurance { display: flex; align-items: center; gap: 9px; margin-top: 26px; color: #d0e3ee; font-size: 12px; }
 .assurance-icon { display: grid; width: 20px; height: 20px; place-items: center; border-radius: 50%; color: var(--navy); background: #84d8bd; font-size: 12px; font-weight: 800; }
 .hero-assurance strong { color: var(--white); }
-.hero-art { position: relative; width: 100%; max-width: 470px; height: 385px; justify-self: end; }
-.art-sun { position: absolute; top: 25px; right: 35px; width: 290px; height: 290px; border-radius: 50%; background: #e8f7fd; }
-.art-house { position: absolute; z-index: 2; top: 112px; left: 60px; width: 290px; }
-.roof { position: relative; z-index: 2; width: 0; height: 0; margin: 0 auto -2px; border-right: 157px solid transparent; border-bottom: 112px solid #197ab5; border-left: 157px solid transparent; filter: drop-shadow(0 7px 0 #125e91); }
-.house-front { position: relative; height: 149px; border: 7px solid #176a9b; background: #fff; box-shadow: 0 12px 0 rgb(9 59 95 / 10%); }
-.window { position: absolute; top: 31px; width: 52px; height: 52px; border: 5px solid #89cde9; border-radius: 3px; background: #d8f2fc; }
-.window::before, .window::after { content: ""; position: absolute; background: #89cde9; }
-.window::before { top: 50%; left: 0; width: 100%; height: 3px; }
-.window::after { top: 0; left: 50%; width: 3px; height: 100%; }
-.window-left { left: 23px; }
-.window-right { right: 23px; }
-.door { position: absolute; bottom: 0; left: 50%; width: 55px; height: 83px; border: 5px solid #176a9b; border-bottom: 0; border-radius: 27px 27px 0 0; background: #ffb79f; transform: translateX(-50%); }
-.door::after { content: ""; position: absolute; right: 7px; bottom: 35px; width: 5px; height: 5px; border-radius: 50%; background: #fff; }
-.house-base { width: 350px; height: 11px; margin-left: -30px; border-radius: 50%; background: #2e98cf; }
-.art-pipe { position: absolute; z-index: 3; border: 11px solid #46add8; background: none; }
-.pipe-horizontal { top: 263px; right: 20px; width: 130px; height: 30px; border-left: 0; border-radius: 0 14px 14px 0; }
-.pipe-vertical { top: 263px; right: 20px; width: 30px; height: 105px; border-top: 0; border-radius: 0 0 14px 14px; }
-.pipe-joint { position: absolute; z-index: 4; top: 254px; right: 9px; width: 48px; height: 48px; border: 10px solid #86d4f0; border-radius: 13px; background: #1489c3; }
-.art-drop { position: absolute; z-index: 4; right: 11px; bottom: 3px; width: 41px; height: 48px; border-radius: 55% 45% 60% 40% / 65% 58% 42% 35%; background: #65cfed; transform: rotate(45deg); box-shadow: 0 0 30px rgb(101 207 237 / 45%); }
-.art-drop span { position: absolute; top: 12px; left: 11px; width: 7px; height: 14px; border-radius: 50%; background: rgb(255 255 255 / 55%); transform: rotate(15deg); }
-.art-spark { position: absolute; color: #ffd879; }
-.spark-one { top: 55px; left: 77px; font-size: 26px; }
-.spark-two { top: 115px; right: 1px; color: #fff; font-size: 18px; }
-.art-tag { position: absolute; z-index: 4; right: 11px; bottom: 57px; display: flex; align-items: center; gap: 9px; padding: 10px 13px; border-radius: 11px; color: var(--navy); background: #fff; box-shadow: 0 10px 28px rgb(4 42 70 / 18%); font-size: 10px; line-height: 1.3; }
-.tag-check { display: grid; width: 25px; height: 25px; place-items: center; border-radius: 50%; color: #145a55; background: #c9f0e2; font-weight: 800; }
-.art-tag strong { font-size: 12px; }
+.hero-photo { position: relative; width: 100%; max-width: 440px; aspect-ratio: 0.94; justify-self: end; overflow: hidden; border: 1px solid rgb(255 255 255 / 25%); border-radius: 22px; background: #153b58; box-shadow: 0 28px 65px rgb(0 0 0 / 28%); }
+.hero-photo img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 27%; }
+.hero-photo::after { position: absolute; inset: 36% 0 0; content: ""; background: linear-gradient(transparent, rgb(5 29 49 / 88%)); pointer-events: none; }
+.photo-caption { position: absolute; z-index: 1; right: 22px; bottom: 22px; left: 22px; display: grid; gap: 5px; color: #fff; }
+.photo-caption > span { color: #a8e1f4; font-size: 10px; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; }
+.photo-caption strong { font-family: Manrope, sans-serif; font-size: clamp(20px, 2.4vw, 27px); letter-spacing: -.7px; line-height: 1.15; }
+.photo-caption small { color: #e1edf6; font-size: 12px; }
+.photo-badge { position: absolute; z-index: 2; top: 18px; right: 18px; display: inline-flex; align-items: center; gap: 8px; padding: 9px 12px; border: 1px solid rgb(255 255 255 / 65%); border-radius: 999px; background: rgb(255 255 255 / 94%); color: var(--navy); font-size: 11px; font-weight: 750; box-shadow: 0 8px 24px rgb(0 0 0 / 12%); }
+.photo-badge span { display: grid; width: 19px; height: 19px; place-items: center; border-radius: 50%; background: #d9f4e9; color: #147251; font-size: 12px; }
 .hero-wave { position: absolute; right: -3%; bottom: -78px; left: -3%; height: 100px; border-radius: 50% 50% 0 0 / 80% 80% 0 0; background: var(--white); }
 
 .trust-strip { padding: 20px 0; border-bottom: 1px solid #edf2f5; background: #fff; }
@@ -238,7 +221,7 @@ h1, h2, h3 { font-family: Manrope, sans-serif; }
   .primary-nav > a:not(.button) { font-size: 12px; }
   .nav-call { padding-inline: 12px; }
   .hero-grid { gap: 20px; }
-  .hero-art { transform: scale(.9); transform-origin: center right; }
+  .hero-photo { max-width: 400px; }
   .service-grid { grid-template-columns: repeat(2, 1fr); }
   .service-card { min-height: 190px; }
   .area-grid { gap: 35px; }
@@ -271,14 +254,7 @@ h1, h2, h3 { font-family: Manrope, sans-serif; }
   .hero-actions { gap: 9px; }
   .hero-actions .button { min-height: 46px; padding-inline: 15px; font-size: 12px; }
   .hero-assurance { margin-top: 19px; font-size: 11px; }
-  .hero-art { width: 100%; max-width: 360px; height: 280px; justify-self: center; transform: scale(.75); transform-origin: top center; margin-bottom: -68px; }
-  .art-sun { top: 2px; right: 29px; width: 260px; height: 260px; }
-  .art-house { top: 77px; left: 28px; transform: scale(.85); transform-origin: top left; }
-  .pipe-horizontal { top: 225px; right: 0; }
-  .pipe-vertical { top: 225px; right: 0; }
-  .pipe-joint { top: 216px; right: -11px; }
-  .art-drop { right: -9px; bottom: -31px; }
-  .art-tag { right: 0; bottom: 19px; }
+  .hero-photo { width: min(100%, 390px); max-width: none; aspect-ratio: .94; justify-self: center; margin-top: 15px; }
   .hero-wave { bottom: -82px; height: 87px; }
   .trust-strip { padding: 17px 0; }
   .trust-items { justify-content: flex-start; gap: 17px; overflow-x: auto; }
